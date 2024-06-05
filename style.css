@@ -1,0 +1,82 @@
+/* *{
+    background-color: #b2e1ff;
+} */
+.parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 25rem;
+    gap: 3rem;
+}
+.child{
+    /* #a17eb5 night */
+    height: 90px;
+    width: 200px;
+    border-radius: 40px;
+    background-image: url(day\ image.jpg);
+    display: flex;
+    align-items: center;
+    position: relative;
+
+}
+.circle{
+    height: 75px;
+    width: 80px;
+    background-color: aliceblue;
+    border-radius: 50px;
+    animation-direction: normal;
+    position: absolute;
+}
+.text{
+    color: white;
+}
+.try{
+    background-image: url(night\ image.jpg);
+}
+.full{
+    height:500px;
+    width: auto;
+    background-color:#b2e1ff;
+}
+.fill{
+    background-color: #a17eb5;
+}
+.move{
+    -webkit-animation: ease-in inherit normal;
+    -webkit-animation-name: run;
+    -webkit-animation-duration: 1s;
+    animation-fill-mode: forwards;
+    
+}
+@-webkit-keyframes run{
+from{
+    transform: translateX(0px);
+}
+to{
+    transform: translateX(120px);
+}
+   
+    
+}
+.try2{
+    background-image: url(day\ image.jpg);
+}
+@-webkit-keyframes run2{
+    from{
+        transform: translateX(120px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+
+.move2{
+    -webkit-animation: ease-in inherit normal;
+    -webkit-animation-name: run2;
+    -webkit-animation-duration: 1s;
+    animation-fill-mode: backwards;
+    
+}
+.fill2{
+    background-color:#b2e1ff;
+}
